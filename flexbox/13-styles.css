@@ -744,7 +744,6 @@ ul.row {
 
 /* Post
     ============================= */
-
 .post {
     display: flex;
 }
@@ -756,10 +755,10 @@ ul.row {
 .post-aside {
     order: -1;
     min-width: 20%;
+}
 
 /* Post Meta
     ============================= */
-
 .post-meta-list {
     flex-direction: column;
 }
@@ -784,7 +783,6 @@ ul.row {
 
 /* Tag list
     ============================= */
-
 .tag-list {
     padding: 0;
     list-style: none;
@@ -799,5 +797,5 @@ ul.row {
 }
 
 .tag-list li:last-child::after {
-    content: ""
+    content: "";
 }

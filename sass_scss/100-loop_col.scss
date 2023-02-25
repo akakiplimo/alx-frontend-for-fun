@@ -1,0 +1,24 @@
+/* Sass file that creates classes with different width */
+@mixin width-diff($w) {
+    width: $w;
+}
+
+@for $i from 1 through 4 {
+    .col-#{$i} {
+        @if $i ==1 {
+            @include width-diff(100%);
+        }
+
+        @else if $i ==2 {
+            @include width-diff(50%);
+        }
+
+        @else if $i ==3 {
+            @include width-diff(33.3333333333%);
+        }
+
+        @else {
+            @include width-diff(25%);
+        }
+    }
+}
